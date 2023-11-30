@@ -1,0 +1,82 @@
+.notes-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 10px;
+}
+
+aside {
+  border-right: solid 1px #dee2e6;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+aside header h1 {
+  font-size: 2.027rem;
+  color: #212529;
+  margin: 0;
+}
+
+aside header .btn {
+  font-size: 1rem;
+  color: #228be6;
+}
+
+.btn-add:hover {
+  color: #4dabf7;
+}
+
+.notes-list {
+  list-style-type: none !important;
+  padding-left: 0;
+}
+
+.notes-list .list:hover {
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+.notes-list .list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: start;
+  cursor: pointer;
+}
+
+.notes-list .list.active {
+  background-color: #1c7ed6;
+  width: 100%;
+}
+
+/* Gaya pada elemen h3, p, dan button saat list aktif */
+.list.active h3 {
+  color: white; /* Warna teks h3 saat list aktif */
+}
+
+.list.active p {
+  color: white; /* Warna teks p saat list aktif */
+}
+
+.list.active .btn-delete {
+  color: white;
+}
+
+.btn-delete {
+  color: #e03131;
+}
+
+.notes-list .list .note-title {
+  font-size: 1.125rem;
+}
+
+.list .note-last-modified {
+  font-size: 0.79rem;
+  margin: 0;
+}
+
+.btn {
+}
+
+.btn-delete {
+  grid-row: span 2;
+  justify-self: end;
+}
